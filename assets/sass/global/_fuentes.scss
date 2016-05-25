@@ -1,0 +1,39 @@
+body{
+	background-attachment: fixed;
+	background-image: url("../images/2254.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	color: white;
+	font-family:din;
+	.container{
+		padding: 0 55px;
+	}
+	p{
+		font-size: 20px;
+	}
+	h1{
+		font-size: 160px;
+
+	}
+	h2{
+		font-weight: 700;
+		font-size: 50px;
+		font-family:din;
+	}
+	h3{
+		font-weight:600
+	}
+}
+@font-face{
+	font-family: peaches;
+	src: url(../fonts/Peaches/Peaches.ttf);
+}
+@font-face{
+	font-family: archivo;
+	src: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
+@font-face{
+	font-family: din;
+	src: url(../fonts/Din/ufonts.com_din-light.ttf);
+}

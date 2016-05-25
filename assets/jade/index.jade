@@ -1,0 +1,76 @@
+doctype html
+html(lang="es")
+	head
+		meta(http-equiv="Content-Type" content="text/html" charset="utf-8")
+		meta(name="viewport" content="width=device-width" initial-scale="1.0")
+		title P o r t a f o l i o
+		link(rel="shortcut icon" type="image/x-icon" href="f.png")
+
+		link(rel="stylesheet" type="text/css" href="css/plugins/bootstrap.min.css")
+		link(rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="css/hover.css")
+	
+	body
+		.scroll-back
+		header.navbar.navbar-fixed-top
+			.container
+				.row
+					.navbar-header
+						button(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false").navbar-toggle.collapsed
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						.navbar-brand Portafolio
+					#bs-example-navbar-collapse-1.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								a.hover-inicial(href="#hola") HOLA
+							li
+								a.hover-inicial(href="#conoceme") CONÓCEME
+							li
+								a.hover-inicial(href="#portafolio") MI PORTAFOLIO
+							li
+								a.hover-inicial(href="#algo mas") ALGO MAS
+							li 
+								a.hover-inicial(href="#contactame") CONTACTAME
+
+		section.banner.text-center
+			.container
+				.row
+					.col-md-6.yo
+						h1 Johelyn
+						p Front-end Developer
+					.col-md-6.muestra
+						a(href="#portafolio").col-md-12.tarjeta
+							span Coder
+							img(src="images/code.png", alt="editor de texto").img-responsive
+						a(href="#otros").col-md-5.tarjeta
+							span Escritora Amateur
+							img(src="images/paginalibro.jpg", alt="pagina de libro escrito").img-responsive
+						a(href="#otros").col-md-7.tarjeta
+							span Amante del dibujo
+							img(src="images/dibujo1.jpg", alt="dibujo de johelyn").img-responsive
+			
+		a(name="conoceme")
+		section.acerca
+			.container.text-center
+				.row
+					h2 Conóceme
+					.col-md-12.clearfix
+						.raya1
+						.raya2
+					img(src="images/joe.jpeg").img-responsive
+
+					H3 20 palabras acerca de mi
+
+					p Soy una joven Front-End Developer muy talentosa, y con un gran deseo de dejar su huella en el mundo.
+
+
+
+
+		script(src="js/jquery.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/main.js")
+		

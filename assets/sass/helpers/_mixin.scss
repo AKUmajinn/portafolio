@@ -1,0 +1,119 @@
+@mixin tarjetainversa{
+	.tarjeta{
+		padding:0;
+		position: relative;
+		text-align: left;
+		transition: all 0.7s ease;
+		color:white;		
+		img{
+			border: 5px solid transparent;
+			transition: all 0.7s ease;
+		}
+		span{
+			word-break: break-word;
+			position: absolute;
+			font-family: din;
+			text-transform: uppercase;
+			font-size: 20px;
+			left: 5%;
+			bottom: 10%;
+			width:0%;
+			border-bottom: 2px solid white;
+			transition: all 0.7s ease;
+			
+			color:transparent;
+		}
+		&:hover{
+			transition: all 1s ease;
+			text-decoration:none;
+			img{
+				-webkit-filter: brightness(0.3);
+				transition: all 1s ease;
+			}
+			span{
+				display:block;
+				color:white;
+				transition: all 2s ease;
+				z-index:10000;
+				width:90%;
+			}
+		}
+	}
+}
+@mixin hoverInicial($color){
+		.color1{
+			color:$verde;
+		}
+		.color2{
+			color:$celeste;
+		}
+		.color3{
+			color:$rosa;
+		}
+	.hover-inicial {
+		display: inline-block;
+		vertical-align: middle;
+		transform: translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		backface-visibility: hidden;
+		position: relative;
+		overflow: hidden;
+		&:hover{
+			color:$color;
+		}
+		&:before{
+			color: $color!important;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			right: 50%;
+			bottom: 0;
+			background: $color;
+			height: 4px;
+			transition-property: left, right;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-out;
+		}
+	}
+	.hover-inicial:hover:before, .hover-inicial:focus:before, .hover-inicial:active:before {
+		left: 0;
+		right: 0;
+	}
+}
+
+@mixin hoverScroll($color){
+	.hover-scroll{
+		color:$color;
+		display: inline-block;
+		vertical-align: middle;
+		transform: translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		backface-visibility: hidden;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			color: $color!important;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			right: 50%;
+			bottom: 0;
+			background: $color;
+			height: 4px;
+			transition-property: left, right;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-out;
+		}
+	}
+	.hover-scroll:hover:before, .hover-scroll:focus:before, .hover-scroll:active:before {
+		left: 0;
+		right: 0;
+		color: $color!important;
+	}
+	.nav-hover-scroll{
+		color: $color!important;
+		transition: all 0.7s ease; 
+	}
+}

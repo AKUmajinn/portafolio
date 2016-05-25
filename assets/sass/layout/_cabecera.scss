@@ -1,0 +1,63 @@
+.scroll-back{
+	position: fixed;
+	padding: 35px;
+	top:0;
+	//background:*rgba(255, 255, 255, 0.88);
+	
+	background:$celeste;
+	transition: all 0.7s ease;
+	z-index: 1;
+}
+header{
+	padding: 10px 0;
+	transform: translateZ(0);
+	transition-property: color;
+	transition-duration: 0.5s;	
+	.navbar-toggle{
+		span{
+			background: white;
+		}
+	}
+	.navbar-brand{
+		color:$celeste;
+		text-transform: $mayusculas;
+		letter-spacing: 5px;
+		font-family: archivo;
+		font-size: 22px;
+	}
+	li{
+		a{
+			font-weight: 600;
+			color: white;
+			margin:0 15px;
+			text-transform: $mayusculas;
+			font-family: din;
+			font-size: 17px;
+		}
+	}
+	@include hoverInicial($celeste);
+	@include hoverScroll(black);
+}
+.banner{
+	padding: 87px 0;
+
+	.yo{
+		padding: 160px 0;
+		h1{
+			display: inline-block;
+			font-family: peaches;
+		}
+		p{
+			color:#989696;
+			font-family: din;
+			text-transform: $mayusculas;
+			font-size: 20px;
+		}
+	}
+	.muestra{
+		padding-top: 15px;
+		@include tarjetainversa;
+	}
+    
+   
+}

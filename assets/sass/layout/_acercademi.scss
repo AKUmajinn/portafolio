@@ -1,30 +1,22 @@
 .acerca{
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 16%,rgba(0,0,0,1) 27%,rgba(0,0,0,1) 38%,rgba(0,0,0,1) 45%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 55%,rgba(5,1,1,1) 88%);
-		    padding: 75px 0px;
-	    h2{
-	    	color:white;
-	    }
-	.clearfix{
-		    margin-bottom: 65px;
-		.raya1{
-			padding:3px;
-			background:$celeste;
-			margin:4px 0;
-		}
-		.raya2{
-			padding:1px;
-			background:$celeste;
-		}
-	}
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 16%,rgba(0,0,0,1) 27%,rgba(0,0,0,1) 38%,rgba(0,0,0,1) 45%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 55%,rgba(5,1,1,1) 88%);
+	padding: 75px 0px;
+
+	@include encabezado($celeste);
+
 	img{
-		height: 275px;
-	    -webkit-filter: sepia(45%);
-	    border-radius: 155px;
-	    border:7px solid white;
-	    margin: auto;
+		height: 220px;
+		-webkit-filter: sepia(8%);
+		border-radius: 155px;
+		border: 7px solid white;
+		margin: auto;
 	}
 	h3{
 		font-size: 35px;
-		margin: 17px 0;
+		margin: 45px;
+	}
+	p{
+		display: inline-block;
+		padding: 0 240px;
 	}
 }

@@ -117,3 +117,26 @@
 		transition: all 0.7s ease; 
 	}
 }
+@mixin encabezado($color){
+	.encabezado{
+		width: 90%;
+		margin: 100px auto;
+		padding: 0 55px;
+		h2{
+			color:white;
+			text-transform:$mayusculas;
+		}
+		.rayaContainer{
+			margin-top: 35px;
+			.raya1{
+				padding:3px;
+				background:$color;
+				margin:4px 0;
+			}
+			.raya2{
+				padding:1px;
+				background:$color;
+			}
+		}
+	}
+}

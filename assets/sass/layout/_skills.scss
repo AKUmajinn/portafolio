@@ -1,0 +1,24 @@
+.skills{
+	background:black;
+	@include encabezado($verde);	
+	.itemsContenedor{
+		padding: 0 110px;
+		p{
+			position:relative;
+			font-weight: 600;
+			font-size:30px;
+			display:inline-block;
+			div{
+				height: 25px;
+				display: inline-block;
+				border-left: 1px solid white;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+
+	}
+
+	
+
+}

@@ -2,8 +2,6 @@
 	position: fixed;
 	padding: 35px;
 	top:0;
-	//background:*rgba(255, 255, 255, 0.88);
-	
 	background:$celeste;
 	transition: all 0.7s ease;
 	z-index: 1;
@@ -42,10 +40,21 @@ header{
 	padding: 87px 0;
 
 	.yo{
-		padding: 160px 0;
+		padding-top: 289px;
 		h1{
+			z-index: 2;
+			position: fixed;
+			left: 17%;
+			top: 30%;
+			transition: all 0.7s ease;
 			display: inline-block;
 			font-family: peaches;
+		}
+		.transicionLogo{
+			transition: all 1s ease;
+			transform: scale(0.5);
+			color:black;
+
 		}
 		p{
 			color:#989696;

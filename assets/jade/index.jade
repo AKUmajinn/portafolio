@@ -40,7 +40,7 @@ html(lang="es")
 			.container
 				.row
 					.col-md-6.yo
-						h1 Johelyn
+						h1#logo Johelyn
 						p Front-end Developer
 					.col-md-6.muestra
 						a(href="#portafolio").col-md-12.tarjeta
@@ -57,15 +57,42 @@ html(lang="es")
 		section.acerca
 			.container.text-center
 				.row
-					h2 Conóceme
-					.col-md-12.clearfix
-						.raya1
-						.raya2
+					.encabezado.clearfix
+						.col-md-7.rayaContainer
+							.raya1
+							.raya2
+						h2.col-md-5 Conóceme
+					
 					img(src="images/joe.jpeg").img-responsive
 
 					H3 20 palabras acerca de mi
 
 					p Soy una joven Front-End Developer muy talentosa, y con un gran deseo de dejar su huella en el mundo.
+
+
+		section.skills
+			.container
+				.row
+					.encabezado.clearfix
+						
+						h2.col-md-5 mis skills
+						.col-md-7.rayaContainer
+							.raya1
+							.raya2
+
+					.itemsContenedor.clearfix.text-center
+						.col-md-4.naranja
+							p#html
+						.col-md-4.celeste
+							p#css 
+						.col-md-4.morado
+							p#js
+						.col-md-6.rosa
+							p#sass
+						.col-md-6.verde
+							p#jade
+
+
 
 
 

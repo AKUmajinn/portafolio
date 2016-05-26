@@ -14,8 +14,11 @@ body {
   body h2 {
     font-weight: 700;
     font-size: 50px;
-    font-family: din; }
+    font-family: din;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
   body h3 {
+    font-size: 35px;
     font-weight: 600; }
 
 @font-face {
@@ -120,10 +123,19 @@ header {
 .banner {
   padding: 87px 0; }
   .banner .yo {
-    padding: 160px 0; }
+    padding-top: 289px; }
     .banner .yo h1 {
+      z-index: 2;
+      position: fixed;
+      left: 17%;
+      top: 30%;
+      transition: all 0.7s ease;
       display: inline-block;
       font-family: peaches; }
+    .banner .yo .transicionLogo {
+      transition: all 1s ease;
+      transform: scale(0.5);
+      color: black; }
     .banner .yo p {
       color: #989696;
       font-family: din;
@@ -168,25 +180,65 @@ header {
 .acerca {
   background: linear-gradient(to bottom, transparent 1%, black 16%, black 27%, black 38%, black 45%, black 52%, black 55%, #050101 88%);
   padding: 75px 0px; }
-  .acerca h2 {
-    color: white; }
-  .acerca .clearfix {
-    margin-bottom: 65px; }
-    .acerca .clearfix .raya1 {
-      padding: 3px;
-      background: #37C4C1;
-      margin: 4px 0; }
-    .acerca .clearfix .raya2 {
-      padding: 1px;
-      background: #37C4C1; }
+  .acerca .encabezado {
+    width: 90%;
+    margin: 100px auto;
+    padding: 0 55px; }
+    .acerca .encabezado h2 {
+      color: white;
+      text-transform: uppercase; }
+    .acerca .encabezado .rayaContainer {
+      margin-top: 35px; }
+      .acerca .encabezado .rayaContainer .raya1 {
+        padding: 3px;
+        background: #37C4C1;
+        margin: 4px 0; }
+      .acerca .encabezado .rayaContainer .raya2 {
+        padding: 1px;
+        background: #37C4C1; }
   .acerca img {
-    height: 275px;
-    -webkit-filter: sepia(45%);
+    height: 220px;
+    -webkit-filter: sepia(8%);
     border-radius: 155px;
     border: 7px solid white;
     margin: auto; }
   .acerca h3 {
     font-size: 35px;
-    margin: 17px 0; }
+    margin: 45px; }
+  .acerca p {
+    display: inline-block;
+    padding: 0 240px; }
+
+.skills {
+  background: black; }
+  .skills .encabezado {
+    width: 90%;
+    margin: 100px auto;
+    padding: 0 55px; }
+    .skills .encabezado h2 {
+      color: white;
+      text-transform: uppercase; }
+    .skills .encabezado .rayaContainer {
+      margin-top: 35px; }
+      .skills .encabezado .rayaContainer .raya1 {
+        padding: 3px;
+        background: #37C471;
+        margin: 4px 0; }
+      .skills .encabezado .rayaContainer .raya2 {
+        padding: 1px;
+        background: #37C471; }
+  .skills .itemsContenedor {
+    padding: 0 110px; }
+    .skills .itemsContenedor p {
+      position: relative;
+      font-weight: 600;
+      font-size: 30px;
+      display: inline-block; }
+      .skills .itemsContenedor p div {
+        height: 25px;
+        display: inline-block;
+        border-left: 1px solid white;
+        position: absolute;
+        bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

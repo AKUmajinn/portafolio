@@ -1,3 +1,31 @@
+::-webkit-scrollbar {
+  width: 11px;
+  background: #dbe8ec; }
+
+::-webkit-scrollbar-button {
+  width: 8px;
+  height: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #1F1F1F;
+  border: thin solid #1a1f25;
+  -webkit-box-shadow: inset black;
+  -webkit-border-radius: 10px;
+  border-radius: 12px; }
+
+::-webkit-scrollbar-thumb {
+  background: #298280;
+  border-radius: 10px;
+  -webkit-border-radius: 12px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2F9290;
+  transition: all 1s ease; }
+
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77, 161, 112, 0.6); }
+
 body {
   background-attachment: fixed;
   background-image: url("../images/2254.jpg");
@@ -5,8 +33,6 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: din; }
-  body .container {
-    padding: 0 55px; }
   body p {
     font-size: 20px; }
   body h1 {
@@ -36,13 +62,16 @@ body {
   top: 0;
   background: #37C4C1;
   transition: all 0.7s ease;
-  z-index: 1; }
+  z-index: 2; }
 
 header {
   padding: 10px 0;
   transform: translateZ(0);
   transition-property: color;
   transition-duration: 0.5s; }
+  header .container {
+    padding-right: 37px;
+    padding-left: 80px; }
   header .navbar-toggle span {
     background: white; }
   header .navbar-brand {
@@ -122,6 +151,8 @@ header {
 
 .banner {
   padding: 87px 0; }
+  .banner .container {
+    padding: 0 5%; }
   .banner .yo {
     padding-top: 289px; }
     .banner .yo h1 {
@@ -129,7 +160,7 @@ header {
       position: fixed;
       left: 17%;
       top: 30%;
-      transition: all 0.7s ease;
+      transition: all 0.6s ease;
       display: inline-block;
       font-family: peaches; }
     .banner .yo .transicionLogo {
@@ -178,6 +209,7 @@ header {
           width: 90%; }
 
 .acerca {
+  transition: all 0.6s ease;
   background: linear-gradient(to bottom, transparent 1%, black 16%, black 27%, black 38%, black 45%, black 52%, black 55%, #050101 88%);
   padding: 75px 0px; }
   .acerca .encabezado {
@@ -190,27 +222,37 @@ header {
     .acerca .encabezado .rayaContainer {
       margin-top: 35px; }
       .acerca .encabezado .rayaContainer .raya1 {
+        width: 100%;
+        transition: all 0.6s ease;
+        transform-origin: right top;
         padding: 3px;
         background: #37C4C1;
         margin: 4px 0; }
       .acerca .encabezado .rayaContainer .raya2 {
+        width: 100%;
+        transition: all 0.6s ease;
+        transform-origin: right top;
         padding: 1px;
         background: #37C4C1; }
   .acerca img {
+    transition: all 0.6s ease;
     height: 220px;
     -webkit-filter: sepia(8%);
     border-radius: 155px;
     border: 7px solid white;
     margin: auto; }
   .acerca h3 {
+    transition: all 0.6s ease;
     font-size: 35px;
     margin: 45px; }
   .acerca p {
+    transition: all 0.6s ease;
     display: inline-block;
-    padding: 0 240px; }
+    padding: 0 29%; }
 
 .skills {
-  background: black; }
+  background: black;
+  padding: 40px 0; }
   .skills .encabezado {
     width: 90%;
     margin: 100px auto;
@@ -221,24 +263,103 @@ header {
     .skills .encabezado .rayaContainer {
       margin-top: 35px; }
       .skills .encabezado .rayaContainer .raya1 {
+        width: 100%;
+        transition: all 0.6s ease;
+        transform-origin: left top;
         padding: 3px;
         background: #37C471;
         margin: 4px 0; }
       .skills .encabezado .rayaContainer .raya2 {
+        width: 100%;
+        transition: all 0.6s ease;
+        transform-origin: left top;
         padding: 1px;
         background: #37C471; }
-  .skills .itemsContenedor {
-    padding: 0 110px; }
-    .skills .itemsContenedor p {
+  .skills .items {
+    padding: 10% 10%; }
+  .skills .load-cont {
+    padding-top: 35px;
+    margin: 10px 0;
+    position: relative; }
+    .skills .load-cont img {
+      height: 85px;
       position: relative;
-      font-weight: 600;
-      font-size: 30px;
-      display: inline-block; }
-      .skills .itemsContenedor p div {
-        height: 25px;
-        display: inline-block;
-        border-left: 1px solid white;
-        position: absolute;
-        bottom: 0; }
+      z-index: 1; }
+    .skills .load-cont .background p {
+      font-size: 40px;
+      font-weight: 700;
+      color: black;
+      display: inline-block;
+      margin-top: 21%;
+      margin-left: 8%; }
+      .skills .load-cont .background p span {
+        border-radius: 5px;
+        padding: 2px;
+        animation: cursor 0.4s infinite alternate; }
+@keyframes cursor {
+  from {
+    background: transparent; }
+  to {
+    background: black; } }
+    .skills .load-cont .background {
+      transition: all 0.6s ease;
+      position: absolute;
+      bottom: 0;
+      /* left: 0; */
+      /* right: 0; */
+      height: 0;
+      width: 95%; }
+  .skills .html .background {
+    background: #5E58CF; }
+  .skills .css .background {
+    background: #C437A4; }
+  .skills .js .background {
+    background: #D87F01; }
+  .skills .jade .background {
+    background: #37C471; }
+  .skills .sass .background {
+    background: #D16F89; }
+  .skills .wordpress .background {
+    background: #37C4C1; }
+
+.portafolio {
+  background: black; }
+  .portafolio .encabezado {
+    width: 90%;
+    margin: 100px auto;
+    padding: 0 55px; }
+    .portafolio .encabezado h2 {
+      color: white;
+      text-transform: uppercase; }
+    .portafolio .encabezado .rayaContainer1 {
+      margin-top: 35px; }
+      .portafolio .encabezado .rayaContainer1 .raya1 {
+        width: 100%;
+        transition: all 0.8s ease;
+        transform-origin: right top;
+        padding: 3px;
+        background: #D87F01;
+        margin: 4px 0; }
+      .portafolio .encabezado .rayaContainer1 .raya2 {
+        width: 100%;
+        transition: all 0.8s ease;
+        transform-origin: right top;
+        padding: 1px;
+        background: #D87F01; }
+    .portafolio .encabezado .rayaContainer {
+      margin-top: 35px; }
+      .portafolio .encabezado .rayaContainer .raya1 {
+        width: 100%;
+        transition: all 0.8s ease;
+        transform-origin: left top;
+        padding: 3px;
+        background: #D87F01;
+        margin: 4px 0; }
+      .portafolio .encabezado .rayaContainer .raya2 {
+        width: 100%;
+        transition: all 0.8s ease;
+        transform-origin: left top;
+        padding: 1px;
+        background: #D87F01; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,24 +1,83 @@
 .skills{
 	background:black;
-	@include encabezado($verde);	
-	.itemsContenedor{
-		padding: 0 110px;
-		p{
-			position:relative;
-			font-weight: 600;
-			font-size:30px;
-			display:inline-block;
-			div{
-				height: 25px;
+	padding: 40px 0;
+	@include encabezado($verde, left);
+	.items{
+		padding:10% 10%;
+	}
+	.load-cont{
+		padding-top: 35px;
+		margin: 10px 0;
+		position:relative;
+		img{
+			height: 85px;
+			position: relative;
+			z-index: 1;
+			
+		}
+		.background{
+			p{
+				font-size: 40px;
+				font-weight: 700;
+				color: black;
 				display: inline-block;
-				border-left: 1px solid white;
-				position: absolute;
-				bottom: 0;
+				margin-top: 21%;
+				margin-left: 8%;
+				span{
+					border-radius: 5px;
+					padding:2px;
+					animation:cursor 0.4s infinite alternate;
+					@keyframes cursor{
+						from{
+							background:transparent;
+						}
+						to{
+							background:black;
+						}
+					}
+				}
 			}
+		}
+		.background{
+			transition: all 0.6s ease;
+			position: absolute;
+			bottom: 0;
+			/* left: 0; */
+			/* right: 0; */
+			height: 0;
+			width: 95%;
 		}
 
 	}
+	.html{
+		.background{
+			background:$violeta;
+		}
+	}
+	.css{
+		.background{
+			background:$fucsia;
+		}
+	}
+	.js{
+		.background{
+			background:$naranja;
+		}
+	}
+	.jade{
+		.background{
+			background:$verde;
+		}
+	}
+	.sass{
+		.background{
+			background:$rosa;
 
-	
-
+		}
+	}
+	.wordpress{
+		.background{
+			background:$celeste;
+		}
+	}
 }

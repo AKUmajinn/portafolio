@@ -1,0 +1,4 @@
+.portafolio{
+	background:black;
+	@include encabezadoPortafolio($naranja,right,left);
+}

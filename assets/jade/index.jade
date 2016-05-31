@@ -30,12 +30,14 @@ html(lang="es")
 							li
 								a.hover-inicial(href="#conoceme") CONÓCEME
 							li
-								a.hover-inicial(href="#portafolio") MI PORTAFOLIO
+								a.hover-inicial(href="#skills") MIS SKILLS
+
 							li
-								a.hover-inicial(href="#algo mas") ALGO MAS
+								a.hover-inicial(href="#portafolio") MI PORTAFOLIO
+							
 							li 
 								a.hover-inicial(href="#contactame") CONTACTAME
-
+		a(name="hola")
 		section.banner.text-center
 			.container
 				.row
@@ -63,40 +65,71 @@ html(lang="es")
 							.raya2
 						h2.col-md-5 Conóceme
 					
-					img(src="images/joe.jpeg").img-responsive
+					img#yo(src="images/joe.jpeg").img-responsive
 
 					H3 20 palabras acerca de mi
 
 					p Soy una joven Front-End Developer muy talentosa, y con un gran deseo de dejar su huella en el mundo.
 
-
+		a(name="skills")
 		section.skills
 			.container
 				.row
-					.encabezado.clearfix
-						
+					.encabezado
 						h2.col-md-5 mis skills
 						.col-md-7.rayaContainer
 							.raya1
 							.raya2
 
-					.itemsContenedor.clearfix.text-center
-						.col-md-4.naranja
-							p#html
-						.col-md-4.celeste
-							p#css 
-						.col-md-4.morado
-							p#js
-						.col-md-6.rosa
-							p#sass
-						.col-md-6.verde
-							p#jade
+				.items.clearfix
+					.col-md-4.load-cont.html
+						img(src="images/html.svg").pull-right
+						.background
+							p 80%
+								span
+					.col-md-4.load-cont.css
+						img(src="images/css.svg").pull-right
+						.background
+							p 75%
+								span
+					.col-md-4.load-cont.js
+						img(src="images/js.svg").pull-right
+						.background
+							p 40%
+								span
+					.col-md-4.load-cont.jade
+						img(src="images/jade.png").pull-right
+						.background
+							p 30%
+								span
+					.col-md-4.load-cont.sass
+						img(src="images/sass.png").pull-right
+						.background
+							p 40%
+								span
+					.col-md-4.load-cont.wordpress
+						img(src="images/wordpress.png").pull-right
+						.background
+							p 20%
+								span
+				
+		section.portafolio
+			.container
+				.row
+					.encabezado.clearfix
+						.col-md-3.rayaContainer1
+							.raya1
+							.raya2
+						h2.col-md-6.text-center portafolio
+						.col-md-3.rayaContainer
+							.raya1
+							.raya2
+						
 
 
 
 
-
-
+		
 		script(src="js/jquery.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/main.js")

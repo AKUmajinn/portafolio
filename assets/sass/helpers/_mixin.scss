@@ -117,7 +117,7 @@
 		transition: all 0.7s ease; 
 	}
 }
-@mixin encabezado($color){
+@mixin encabezado($color, $direccion){
 	.encabezado{
 		width: 90%;
 		margin: 100px auto;
@@ -129,11 +129,64 @@
 		.rayaContainer{
 			margin-top: 35px;
 			.raya1{
+				width:100%;
+				transition: all 0.6s ease;
+				transform-origin: $direccion top;
 				padding:3px;
 				background:$color;
 				margin:4px 0;
 			}
 			.raya2{
+				width:100%;
+				transition: all 0.6s ease;
+				transform-origin: $direccion top;	
+				padding:1px;
+				background:$color;
+			}
+		}
+	}
+}
+@mixin encabezadoPortafolio($color, $direccion1, $direccion2){
+	.encabezado{
+		width: 90%;
+		margin: 100px auto;
+		padding: 0 55px;
+		h2{
+			color:white;
+			text-transform:$mayusculas;
+		}
+		.rayaContainer1{
+			margin-top: 35px;
+			.raya1{
+				width:100%;
+				transition: all 0.8s ease;
+				transform-origin: $direccion1 top;
+				padding:3px;
+				background:$color;
+				margin:4px 0;
+			}
+			.raya2{
+				width:100%;
+				transition: all 0.8s ease;
+				transform-origin: $direccion1 top;	
+				padding:1px;
+				background:$color;
+			}
+		}
+		.rayaContainer{
+			margin-top: 35px;
+			.raya1{
+				width:100%;
+				transition: all 0.8s ease;
+				transform-origin: $direccion2 top;
+				padding:3px;
+				background:$color;
+				margin:4px 0;
+			}
+			.raya2{
+				width:100%;
+				transition: all 0.8s ease;
+				transform-origin: $direccion2 top;	
 				padding:1px;
 				background:$color;
 			}

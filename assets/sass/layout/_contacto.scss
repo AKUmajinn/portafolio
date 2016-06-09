@@ -1,4 +1,5 @@
 .contacto{
+	    padding-bottom: 100px;
 	background:black;
 	@include encabezado(black, left);
 	h2{
@@ -7,5 +8,14 @@
 	a{
 		color: $celeste;
 		font-size: 90px;
+	}
+}
+footer{
+	background:$celeste;
+	color:black;
+	font-weight:bold;
+	padding:30px;
+	p{
+		margin:0;
 	}
 }

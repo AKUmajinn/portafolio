@@ -1,11 +1,11 @@
 function animaciones() {
 	var desplazamientoActual = $(document).scrollTop();
 	if(desplazamientoActual > 37){
-		$(".scroll-back").css("transform","scaleX(50)");
+		$(".scroll-back").addClass("animacionHeader1").removeClass("animacionHeader2");
 		$(".navbar-brand").addClass("hide");
 		$("header a").addClass("hover-scroll").removeClass("hover-inicial");
 	}else{
-		$(".scroll-back").css("transform","scaleX(1)");
+		$(".scroll-back").addClass("animacionHeader2").removeClass("animacionHeader1");
 		$(".navbar-brand").removeClass("hide");
 		$("header a").addClass("hover-inicial").removeClass("hover-scroll");
 	};
@@ -18,37 +18,25 @@ function animaciones() {
 
 }
 
+
 function logoAnimacion (desplazamientoActual) {
 
 	if (desplazamientoActual>0 && desplazamientoActual<=135) {
-	    	$("#logo").css("transform","scale(1)");
-	    	$("#logo").css("top","30%");
-	    	$("#logo").css("left","17%")
-	    }else if(desplazamientoActual>=136 && desplazamientoActual<=171) {
-	    	$("#logo").css("transform","scale(0.9)");
-	    	$("#logo").css("top","24%");
-	    	$("#logo").css("left","17%")
-	    }else if (desplazamientoActual>=172 && desplazamientoActual<207) {
-	    	$("#logo").css("transform","scale(0.8)");
-	    	$("#logo").css("top","18%");
-	    	$("#logo").css("left","17%")
-	    }else if (desplazamientoActual>=208 && desplazamientoActual<243) {
-	    	$("#logo").css("transform","scale(0.7)");
-	    	$("#logo").css("top","12%");
-	    	$("#logo").css("left","17%")
-	    }else if (desplazamientoActual>=244&& desplazamientoActual<287) {
-	    	$("#logo").css("transform","scale(0.6)");
-	    	$("#logo").css("top","6%");
-	    	$("#logo").css("left","17%")
-	    }else if (desplazamientoActual>=288 && desplazamientoActual<319) {
-	    	$("#logo").css("transform","scale(0.5)");
-	    	$("#logo").css("top","0%");
-	    	$("#logo").css("left","17%")
-	    }else if (desplazamientoActual>320) {
-	    	$("#logo").css("transform","scale(0.4)");
-	    	$("#logo").css("top","-11.5%");
-	    	$("#logo").css("left","10%");
-	    }
+		$("#logo").attr("class","logo1");
+
+	}else if(desplazamientoActual>=136 && desplazamientoActual<=171) {
+		$("#logo").attr("class","logo2");
+	}else if (desplazamientoActual>=172 && desplazamientoActual<207) {
+		$("#logo").attr("class","logo3");
+	}else if (desplazamientoActual>=208 && desplazamientoActual<243) {
+		$("#logo").attr("class","logo4");
+	}else if (desplazamientoActual>=244&& desplazamientoActual<287) {
+		$("#logo").attr("class","logo5");
+	}else if (desplazamientoActual>=288 && desplazamientoActual<319) {
+		$("#logo").attr("class","logo6");
+	}else if (desplazamientoActual>320) {
+		$("#logo").attr("class","logo7");
+	}
 }
 function skills (contenedor,desplazamientoActual,posicionElemento,xy) {
 	 if (desplazamientoActual>posicionElemento) {
@@ -73,7 +61,22 @@ function items (desplazamientoActual) {
 }
  
 $(document).ready(function () {
+	var indiceInicial=0;
 	//PARA QUE EL DESPLAZAMIENTO DE LAS ANCLAS NO SEA TAN SALVAJE
+	var links= [
+		{imagen:"images/gridsystem.png",
+		url:"http://akumajinn.github.io/Grid-system-boostrap/"
+		},
+		{imagen:"images/agency.png",
+		url:"http://akumajinn.github.io/agency-theme/"
+		},
+		{imagen:"images/dashboard.png",
+		url:"http://akumajinn.github.io/dashboard//"
+		},
+		{imagen:"images/lovetheme.png",
+		url:"http://akumajinn.github.io/Love-theme/"
+		}
+		];
 	$(function(){
 
 	     $('a[href*=#]').click(function() {
@@ -99,12 +102,31 @@ $(document).ready(function () {
 
 	   });
 
-//ocultar la animacion de carga aqui peerrro
 
 	});
 	$(document).on("scroll", animaciones);
 
-	
+	$(".direccionr").click(function (e) {
+		e.preventDefault();
+		indiceInicial=indiceInicial+1;
+		if(!(indiceInicial<links.length)){
+			indiceInicial=0;
+		}
+
+		$(".desktop a").attr("href", links[indiceInicial].url)
+		$(".desktop img").attr("src", links[indiceInicial].imagen)
+	})
+	$(".direccionl").click(function (e) {
+		e.preventDefault();
+		indiceInicial=indiceInicial-1;
+		if(!(indiceInicial>0)){
+			indiceInicial=links.length -1;
+		}
+
+		$(".desktop a").attr("href", links[indiceInicial].url)
+		$(".desktop img").attr("src", links[indiceInicial].imagen)
+	})
+		
 });
 
 	

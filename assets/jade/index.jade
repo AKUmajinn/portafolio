@@ -4,8 +4,7 @@ html(lang="es")
 		meta(http-equiv="Content-Type" content="text/html" charset="utf-8")
 		meta(name="viewport" content="width=device-width" initial-scale="1.0")
 		title P o r t a f o l i o
-		link(rel="shortcut icon" type="image/x-icon" href="f.png")
-
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.JPG")
 		link(rel="stylesheet" type="text/css" href="css/plugins/bootstrap.min.css")
 		link(rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/style.css")
@@ -41,10 +40,10 @@ html(lang="es")
 		section.banner.text-center
 			.container
 				.row
-					.col-md-6.yo
-						h1#logo Johelyn
+					.col-xs-12.col-md-6.yo
+						h1.logo#logo Johelyn
 						p Front-end Developer
-					.col-md-6.muestra
+					.hidden-xs.col-md-6.muestra
 						a(href="#portafolio").col-md-12.tarjeta
 							span Coder
 							img(src="images/code.png", alt="editor de texto").img-responsive
@@ -63,7 +62,7 @@ html(lang="es")
 						.col-md-7.rayaContainer
 							.raya1
 							.raya2
-						h2.col-md-5 Conóceme
+						h2.col-xs-12.col-md-5 Conóceme
 					
 					img#yo(src="images/joe.jpeg").img-responsive
 
@@ -112,10 +111,10 @@ html(lang="es")
 						.background
 							p 20%
 								span
-				
+		a(name="portafolio")		
 		section.portafolio
 			.container
-				.row
+				.row.text-center
 					.encabezado.clearfix
 						.col-md-3.rayaContainer1
 							.raya1
@@ -124,9 +123,44 @@ html(lang="es")
 						.col-md-3.rayaContainer
 							.raya1
 							.raya2
-						
-
-
+					p Esta es una pequeña muestra de mis trabajos en imagenes, si deseas ver mas detalles puedes dar click en la que te guste.
+					.desktop.img-responsive.fader#Fader
+						a(target="_blank" href="http://akumajinn.github.io/Grid-system-boostrap/")
+							img(src="images/gridsystem.png").img-responsive
+					.parante
+					a(href="#").direccionl
+						i.fa.fa-arrow-left
+					
+					a(href="#").direccionr
+						i.fa.fa-arrow-right
+					
+					
+		section.franjaInsp
+			.transaparencia
+				p.text-left "Las cosas tienen vida propia, solo es cuestión de despertarles el ánima."
+				p.text-right Gabriel García Márquez. (Cien años de Soledad)
+		
+		a(name="contactame")
+		section.contacto
+			.container
+				.row
+					.encabezado.clearfix
+						h2.col-md-5 Contactame!
+						.col-md-7.rayaContainer
+							.raya1
+				
+					.col-xs-3.text-center
+						a(href="#" target="_blank")
+							i.fa.fa-envelope-o
+					.col-xs-3.text-center
+						a(href="#" target="_blank")
+							i.fa.fa-linkedin
+					.col-xs-3.text-center
+						a(href="#" target="_blank")
+							i.fa.fa-github
+					.col-xs-3.text-center
+						a(href="#" target="_blank")
+							i.fa.fa-phone
 
 
 		

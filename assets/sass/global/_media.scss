@@ -1,7 +1,56 @@
 @media (max-width : 768px) {
+	header .container{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		
+	}	
+	header{
+		.navbar-brand{
+			display:none;
+		}
+		.hover-scroll{
+			background:$celeste;
+			&:hover{
+				background:$celeste !important;
+			}
+		}
+	}
+	.banner{
+		.yo{
+			.logo,.logo1,.logo2,.logo3,.logo4,.logo5,.logo6,.logo7{
+				left: 26%;
 
+			}
+			.logo7{
+				transform: scale(0.4);
+				top: -12.5%;
+			}
+		}
+	}
 }
 
 @media (max-width : 480px) {
-
+	header{
+		.navbar-brand{
+			margin-left: 20%;
+		}
+	}
+	.banner{
+		.yo{
+			padding-top: 255px;
+			.logo,.logo1,.logo2,.logo3,.logo4,.logo5,.logo6,.logo7{
+				left: 13%;
+				font-size: 123px;
+			}
+			.logo7{
+				transform: scale(0.4);
+				top: -8.5%;
+			}
+		}
+	}
+	.acerca .encabezado{
+		margin:auto;
+		padding:0;
+	}
+	
 }

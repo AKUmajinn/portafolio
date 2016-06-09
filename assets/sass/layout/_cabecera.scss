@@ -6,6 +6,12 @@
 	transition: all 0.7s ease;
 	z-index: 2;
 }
+.animacionHeader1{
+	transform: scaleX(50);
+}
+.animacionHeader2{
+	transform: scaleX(1);
+}
 header{
 	padding: 10px 0;
 	transform: translateZ(0);
@@ -48,7 +54,7 @@ header{
 
 	.yo{
 		padding-top: 289px;
-		h1{
+		.logo{
 			z-index: 2;
 			position: fixed;
 			left: 17%;

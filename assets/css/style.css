@@ -64,6 +64,12 @@ body {
   transition: all 0.7s ease;
   z-index: 2; }
 
+.animacionHeader1 {
+  transform: scaleX(50); }
+
+.animacionHeader2 {
+  transform: scaleX(1); }
+
 header {
   padding: 10px 0;
   transform: translateZ(0);
@@ -155,7 +161,7 @@ header {
     padding: 0 5%; }
   .banner .yo {
     padding-top: 289px; }
-    .banner .yo h1 {
+    .banner .yo .logo {
       z-index: 2;
       position: fixed;
       left: 17%;
@@ -323,7 +329,9 @@ header {
     background: #37C4C1; }
 
 .portafolio {
-  background: black; }
+  position: relative;
+  background: black;
+  padding: 0 0 150px; }
   .portafolio .encabezado {
     width: 90%;
     margin: 100px auto;
@@ -361,5 +369,183 @@ header {
         transform-origin: left top;
         padding: 1px;
         background: #D87F01; }
+  .portafolio p {
+    display: inline-block;
+    padding: 0 185px;
+    margin-bottom: 55px; }
+  .portafolio .desktop {
+    overflow: auto;
+    width: 1009.500px;
+    height: 559.5px;
+    border: 30px solid #244A61;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: auto;
+    position: relative; }
+  .portafolio .parante {
+    max-width: 250px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-bottom: 45px solid #ADACB2;
+    margin: auto; }
+  .portafolio .direccionl, .portafolio .direccionr {
+    font-size: 44px;
+    border: 3px solid #37C4C1;
+    padding: 0px 10px 0px 10px;
+    width: 66px;
+    display: inline-block;
+    border-radius: 42px;
+    color: #37C4C1;
+    position: absolute; }
+  .portafolio .direccionl {
+    top: 56%;
+    left: 3%; }
+  .portafolio .direccionr {
+    top: 56%;
+    right: 3%; }
+
+.franjaInsp {
+  background-image: url("../images/code.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .franjaInsp .transaparencia {
+    padding: 24px 13%;
+    background: rgba(0, 0, 0, 0.3); }
+    .franjaInsp .transaparencia .text-left {
+      font-size: 45px;
+      font-weight: 700; }
+    .franjaInsp .transaparencia .text-right {
+      font-weight: 700;
+      font-size: 23px; }
+
+.contacto {
+  background: black; }
+  .contacto .encabezado {
+    width: 90%;
+    margin: 100px auto;
+    padding: 0 55px; }
+    .contacto .encabezado h2 {
+      color: white;
+      text-transform: uppercase; }
+    .contacto .encabezado .rayaContainer {
+      margin-top: 35px; }
+      .contacto .encabezado .rayaContainer .raya1 {
+        width: 100%;
+        transition: all 0.6s ease;
+        transform-origin: left top;
+        padding: 3px;
+        background: black;
+        margin: 4px 0; }
+      .contacto .encabezado .rayaContainer .raya2 {
+        width: 100%;
+        transition: all 0.6s ease;
+        transform-origin: left top;
+        padding: 1px;
+        background: black; }
+  .contacto h2 {
+    color: #37C4C1 !important; }
+  .contacto a {
+    color: #37C4C1;
+    font-size: 90px; }
+
+.banner .logo1 {
+  transform: scale(1);
+  top: 30%;
+  left: 17%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+.banner .logo2 {
+  transform: scale(0.9);
+  top: 24%;
+  left: 17%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+.banner .logo3 {
+  transform: scale(0.8);
+  top: 18%;
+  left: 17%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+.banner .logo4 {
+  transform: scale(0.7);
+  top: 12%;
+  left: 17%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+.banner .logo5 {
+  transform: scale(0.6);
+  top: 6%;
+  left: 17%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+.banner .logo6 {
+  transform: scale(0.5);
+  top: 0%;
+  left: 17%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+.banner .logo7 {
+  transform: scale(0.4);
+  top: -11.5%;
+  left: 10%;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.6s ease;
+  display: inline-block;
+  font-family: peaches; }
+
+@media (max-width: 768px) {
+  header .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+
+  header .navbar-brand {
+    display: none; }
+  header .hover-scroll {
+    background: #37C4C1; }
+    header .hover-scroll:hover {
+      background: #37C4C1 !important; }
+
+  .banner .yo .logo, .banner .yo .logo1, .banner .yo .logo2, .banner .yo .logo3, .banner .yo .logo4, .banner .yo .logo5, .banner .yo .logo6, .banner .yo .logo7 {
+    left: 26%; }
+  .banner .yo .logo7 {
+    transform: scale(0.4);
+    top: -12.5%; } }
+@media (max-width: 480px) {
+  header .navbar-brand {
+    margin-left: 20%; }
+
+  .banner .yo {
+    padding-top: 255px; }
+    .banner .yo .logo, .banner .yo .logo1, .banner .yo .logo2, .banner .yo .logo3, .banner .yo .logo4, .banner .yo .logo5, .banner .yo .logo6, .banner .yo .logo7 {
+      left: 13%;
+      font-size: 123px; }
+    .banner .yo .logo7 {
+      transform: scale(0.4);
+      top: -8.5%; }
+
+  .acerca .encabezado {
+    margin: auto;
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

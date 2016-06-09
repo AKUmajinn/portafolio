@@ -1,4 +1,68 @@
 .portafolio{
+	position: relative;
 	background:black;
+	padding:0 0 150px;
 	@include encabezadoPortafolio($naranja,right,left);
+	p{
+		display: inline-block;
+		padding: 0 185px;
+		margin-bottom: 55px;
+	}
+	.desktop{
+		overflow:auto;
+		width: 1009.500px;
+		height: 559.5px;
+		border: 30px solid #244A61;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		margin: auto;
+		position: relative;
+	}
+	.parante{
+		max-width: 250px;
+		height: 0px;
+		border-right: 25px solid transparent;
+		border-left: 25px solid transparent;
+		border-bottom: 45px solid #ADACB2;
+		margin: auto;
+	}
+	.direccionl, .direccionr{
+		font-size: 44px;
+		border: 3px solid $celeste;
+		padding: 0px 10px 0px 10px;
+		width: 66px;
+		display: inline-block;
+		border-radius: 42px;
+		color:$celeste;
+		position: absolute;
+
+	}
+	.direccionl{
+		    top: 56%;
+    left: 3%;
+	}
+	.direccionr{
+		    top: 56%;
+    right: 3%;
+	}
+}
+.franjaInsp{
+	background-image: url("../images/code.png");
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .transaparencia{
+    	padding: 24px 13%;
+    	background: rgba(0, 0, 0, 0.3);
+    	.text-left{
+    		font-size: 45px;
+    		font-weight: 700;
+    	}
+    	.text-right{
+    		font-weight: 700;
+    		font-size: 23px;
+
+    	}
+    }
+
 }

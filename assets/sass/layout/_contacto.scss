@@ -1,0 +1,11 @@
+.contacto{
+	background:black;
+	@include encabezado(black, left);
+	h2{
+		color:$celeste!important;
+	}
+	a{
+		color: $celeste;
+		font-size: 90px;
+	}
+}

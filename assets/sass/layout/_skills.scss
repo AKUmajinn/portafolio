@@ -15,13 +15,26 @@
 			z-index: 1;
 			
 		}
+		.active{
+			height:100%;
+		}
+		.inactive{
+			height:0%;
+		}
 		.background{
+			transition: all 0.6s ease;
+			position: absolute;
+			bottom: 0;
+			/* left: 0; */
+			/* right: 0; */
+
+			width: 95%;
 			p{
 				font-size: 40px;
 				font-weight: 700;
 				color: black;
 				display: inline-block;
-				margin-top: 21%;
+				margin-top: 65px;
 				margin-left: 8%;
 				span{
 					border-radius: 5px;
@@ -38,17 +51,9 @@
 				}
 			}
 		}
-		.background{
-			transition: all 0.6s ease;
-			position: absolute;
-			bottom: 0;
-			/* left: 0; */
-			/* right: 0; */
-			height: 0;
-			width: 95%;
-		}
 
 	}
+
 	.html{
 		.background{
 			background:$violeta;

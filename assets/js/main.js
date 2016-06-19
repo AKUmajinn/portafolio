@@ -53,9 +53,11 @@ function skills (contenedor,desplazamientoActual,posicionElemento,xy) {
 }
 function items (desplazamientoActual) {
 	if (desplazamientoActual>1390) {
-		$(".skills .background").css("height", "100%");
+		$(".skills .background").addClass("active");
+		$(".skills .background").removeClass("inactive");
 	}else {
-		$(".skills .background").css("height", "0%");
+		$(".skills .background").addClass("inactive");
+		$(".skills .background").removeClass("active");
 
 	}
 }

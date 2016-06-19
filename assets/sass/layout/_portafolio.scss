@@ -5,13 +5,13 @@
 	@include encabezadoPortafolio($naranja,right,left);
 	p{
 		display: inline-block;
-		padding: 0 185px;
+		padding: 0 12%;
 		margin-bottom: 55px;
 	}
 	.desktop{
 		overflow:auto;
-		width: 1009.500px;
-		height: 559.5px;
+		display:inline-block;
+    	height: 443.5px;
 		border: 30px solid #244A61;
 		border-top-left-radius: 40px;
 		border-top-right-radius: 40px;
@@ -53,7 +53,7 @@
     background-repeat: no-repeat;
     .transaparencia{
     	padding: 24px 13%;
-    	background: rgba(0, 0, 0, 0.3);
+    	background: rgba(0, 0, 0, 0.61);
     	.text-left{
     		font-size: 45px;
     		font-weight: 700;
